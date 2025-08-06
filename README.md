@@ -247,3 +247,12 @@ public class BubbleSort {
     }
 }
 ```
+
+```bash
+| Pillar            | Description                                                                                     | Python Example                              |
+| ----------------- | ----------------------------------------------------------------------------------------------- | ------------------------------------------- |
+| **Encapsulation** | Binding data + methods in one unit (class). Access modifiers (`_`, `__`) hide internal details. | `self.__salary` hides variable inside class |
+| **Abstraction**   | Hiding complex implementation using interfaces/abstract base classes.                           | Use `abc` module in Python                  |
+| **Inheritance**   | A class inherits from another to reuse code.                                                    | `class Dog(Animal):`                        |
+| **Polymorphism**  | Same method behaves differently depending on object type.                                       | Method overriding, duck typing              |
+```
