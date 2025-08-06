@@ -101,6 +101,45 @@ public class KadaneAlgorithm {
     }
 }
 ```
+
+### c) Remove duplicates from a sorted array
+
+```bash
+public class RemoveDuplicates {
+    public static void main(String[] args) {
+        int[] arr = {1, 1, 2, 2, 3, 4, 4};
+        int n = arr.length;
+        int index = 1;
+        for (int i = 1; i < n; i++) {
+            if (arr[i] != arr[i - 1]) {
+                arr[index++] = arr[i];
+            }
+        }
+        for (int i = 0; i < index; i++) {
+            System.out.print(arr[i] + " ");
+        }
+    }
+}
+```
+### d) Find second largest number
+
+```bash
+public class SecondLargest {
+    public static void main(String[] args) {
+        int[] arr = {10, 5, 8, 20, 15};
+        int first = Integer.MIN_VALUE, second = Integer.MIN_VALUE;
+        for (int num : arr) {
+            if (num > first) {
+                second = first;
+                first = num;
+            } else if (num > second && num != first) {
+                second = num;
+            }
+        }
+        System.out.println("Second Largest: " + second);
+    }
+}
+```
 ### 3. Basic Recursion
 ### Factorial using recursion
 
